@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alina Thapa</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="js/factorial.js" defer></script>
 </head>
-<body>
-<div></div>
-</body>
-</html>
+
+<body id="body">
+  <header class="light-gray-header">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+      <div>
+        <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" class="me-3 text-decoration-none">HTML5</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="me-3 text-decoration-none">JavaScript</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="text-decoration-none">CSS</a>
+      </div>
+      <div>
+        <button class="btn btn-dark" onclick="setDarkMode()">Dark</button>
+        <button class="btn btn-light" onclick="setLightMode()">Light</button>
+        <button class="btn btn-secondary" onclick="contactMe()">Contact Me</button>
+      </div>
+    </div>
+  </header>
+  <main class="container my-4">
+    <h1>Online Factorial Calculator</h1>
+
+    <div class="row align-items-center my-3">
+    
+      <div class="col-3 text-end">
+        <h5>Factorial calculator.</h5>
+        <p>n! = 1x2x3...xn <br> e.g. 5! = 120</p>
+      </div>
+
+      <div class="col-9">
+        <label for="userInput">Enter a number:</label>
+        <input type="number" id="userInput" class="form-control mb-3" placeholder="Enter number" />
+        <button class="btn btn-secondary" onclick="calculateFactorial()">Enter</button>
+        <div id="output" class="output-screen mt-3 p-3 border rounded">
+          Output will be displayed here…
+
